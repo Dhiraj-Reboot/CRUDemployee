@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta branch="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            /* background-color: #5b8fdb; */
+            background-image: url("img1.jpg");
+            background-size: cover;
+            background-position: center;
+            object-fit: fill;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 10px;
+            position: relative;
+        }
+
+        .container {
+            /* align-content: center;
+            margin: auto; */
+            margin-top: 100px;
+
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .containerform {
+            margin-top: 100px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .container form {
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            /* margin-left: auto; */
+            width: 80%;
+            max-width: 700px;
+        }
+
+        #employeForm {
+            background: transparent;
+            backdrop-filter: blur(20px);
+
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 5, 5, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #employeForm div {
+            margin-bottom: 10px;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #aa1f1f;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+
+            color: black;
+            background-color: #1ad123;
+        }
+
+        input[type="text"]:hover {
+            background-color: #1fc9b2;
+        }
+
+        input[type="date"]:hover {
+            background-color: #1fc9b2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #eb0d0df6;
+        }
+
+        tr {
+            background-color: #f8f8f89c;
+
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .heading {
+            display: block;
+            /* align-content: center; */
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            /* margin: auto; */
+             /* margin-left: auto; */
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 10px; 
+            background-color: #e4121db7;
+            margin-bottom: 490px;
+        }
+
+        #delbtn {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Red & White Employee Details</h1>
+    </div>
+    <div class="container">
+        <form method="post" id="employeForm">
+            <div>
+                <label for="branch">Branch</label>
+                <input type="text" name="branch" id="branch">
+            </div>
+            <div>
+                <label for="name"> Employee Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="designation">Designation</label>
+                <input type="text" name="designation" id="designation">
+            </div>
+            <div>
+                <label for="date">Joining Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+    <div class="containerform">
+
+        <table border="" id="employeTbl">
+            <thead>
+                <tr>
+                    <th>Branch</th>
+                    <th>Employee branch</th>
+                    <th>Designation</th>
+                    <th>Joining Date</th>
+                    <th>Optional</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripttry.js"></script>
+</body>
+
+</html>
